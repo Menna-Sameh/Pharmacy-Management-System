@@ -1,7 +1,6 @@
 # Pharmacy Management System
 
 ## Project Overview
-
 The **Pharmacy Management System** is a **Windows Forms** desktop application designed to manage pharmaceutical data efficiently. The system provides functionalities for **Excel Data Import and Mapping, Database Management with CRUD Operations, and Report Generation (Excel Export)**. The application follows **SOLID** principles, leverages **Entity Framework (EF) Core** for database operations, and utilizes **LINQ** for data querying.
 
 ---
@@ -12,7 +11,7 @@ The **Pharmacy Management System** is a **Windows Forms** desktop application de
 
 #### **Functionality**
 - **File Upload:** Users can upload Excel files (`.xlsx`) containing pharmaceutical data.
-- **Reflection-Based Mapping:** The application dynamically maps Excel columns to class properties (e.g., `Customer`, `Product`).
+- **Reflection-Based Mapping:** The application dynamically maps Excel columns to class properties (e.g., `Medicine`, `Supplier`, `Customer`).
   - If column names match property names, the data is mapped automatically.
   - If there are mismatches (e.g., missing columns), the system displays an error message.
 
@@ -61,7 +60,7 @@ The **Pharmacy Management System** is a **Windows Forms** desktop application de
 
 ## Workflow
 
-1. **User uploads an Excel file** (containing customer, product, or transaction data).
+1. **User uploads an Excel file** (containing medicine, supplier, or customer data).
 2. **System dynamically maps the data** to appropriate class properties using **Reflection**.
 3. **Data is stored in the database** using **EF Core**.
 4. **Users perform CRUD operations** (Create, Read, Update, Delete) on the data.
@@ -78,7 +77,7 @@ The **Pharmacy Management System** is a **Windows Forms** desktop application de
 
 ## Technologies Used
 
-- **Windows Forms (.NET Framework/.NET Core)** – UI Development
+- **Windows Forms (.NET Core/.NET Framework)** – UI Development
 - **Entity Framework (EF) Core** – ORM for database interactions
 - **LINQ** – Querying and manipulating data
 - **Reflection** – Dynamic mapping of Excel data
